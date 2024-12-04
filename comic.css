@@ -194,29 +194,29 @@ body {
 }
 
 #item1{
-    animation-delay: calc(30s/5 * (5 - 1) * -1);
+    animation-delay: calc(30s/6 * (6 - 1) * -1);
 }
 #item2{
-    animation-delay: calc(30s/5 * (5 - 2) * -1);
+    animation-delay: calc(30s/6 * (6 - 2) * -1);
 }
 #item3{
-    animation-delay:calc(30s/5 * (5 - 3) * -1) ;
+    animation-delay:calc(30s/6 * (6 - 3) * -1) ;
 }
 #item4{
-    animation-delay: calc(30s/5 * (5 - 4) * -1);
+    animation-delay: calc(30s/6 * (6 - 4) * -1);
 }
 #item5{
-    animation-delay: calc(30s/5 * (5 - 5) * -1);
+    animation-delay: calc(30s/6 * (6 - 5) * -1);
 }
-/* #item6{
-    animation-delay:calc(30s/8 * (8 - 6) * -1) ;
+ #item6{
+    animation-delay:calc(30s/6 * (6 - 6) * -1) ;
 }
-#item7{
+/* #item7{
     animation-delay:calc(30s/8 * (8 - 7) * -1) ;
 }
 #item8{
     animation-delay:calc(30s/8 * (8 - 8) * -1) ;
-} */
+}  */
 
 .galactus{
     font-family: "VT323", serif;
