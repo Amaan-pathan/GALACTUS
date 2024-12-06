@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=VT323&display=swap');
-
+@font-face {
+    font-family: Myfont;
+    src: url(./Arcanum_Order.ttf);
+}
+@font-face {
+    font-family: Myfont2;
+    src: url(./StoneWalls.ttf);
+}
 body {
     margin: 0;
-    font-family: Cinzel;
 }
 
 .video-container {
@@ -230,11 +236,14 @@ body {
 #tag{
     font-weight: 900;
     font-size: 60px;
-    /* font-family:; */
+     font-family:Myfont2;
     margin-bottom: 3rem;
 }
 #jist{
     line-height: 1.5;
+    font-size: 20px;
+    font-weight: 00;
+    font-family: Myfont;
 }
 
 .jist-img{
@@ -250,6 +259,7 @@ body {
     color:white;
     margin-left: 10rem;
     font-size: 60px;
+    font-family: Myfont2;
 }
 
 .img1{
@@ -273,11 +283,16 @@ body {
     justify-content: space-evenly;
     margin-top: 3rem;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jaro:opsz@6..72&family=VT323&display=swap');
 .about{
     color: white;
     margin-left: 10rem;
     margin-top: 3rem;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 00;
+    font-family: Myfont;
+
     /* margin-bottom: 10px; */
 }
 
