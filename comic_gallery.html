@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Showcase</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 40px; 
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .card {
+            width: 100%;
+            height: 600px;
+            aspect-ratio: 4 / 3;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            background-color: #1c1c1c;
+        }
+
+        .card .image-box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .card .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .card .content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+            overflow-wrap: break-word; 
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            margin: 0;
+            color: #ff4a4a;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .content p {
+            font-size: 0.9em;
+            color: #d1d1d1;
+            margin-top: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            margin-right:15px ;
+        }
+
+        .card:hover .image-box img {
+            transform: scale(1.05); 
+        }
+
+        .card:hover .content {
+            transform: translateY(0);
+        }
+
+        .card:hover .content h2,
+        .card:hover .content p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        .btn {
+        position: relative; padding: 10px 30px;
+        margin: 0 15px; color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        Letter-spacing: 2px; 
+        font-size: 20px; 
+        Overflow:hidden;
+        transition: 0.5s;
+        }
+
+        .btn:hover{
+        background: #ff4a4a;;
+        color: #111;
+        box-shadow: 0 0 50px #ff4a4a;;
+        transition-delay: 0.5s;
+        }
+
+        .btn:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        Left: 0; width: 10px; height: 10px;
+        border-top: 2px solid #ff0000; border-left: 2px solid #ff0000;
+        transition:0.5s;
+        transition-delay: 0.5s;
+        }
+
+
+        .btn:hover:before
+        {
+        width: 100%; height: 100%;
+        transition-delay: 0s;
+        }
+
+        .btn:after{
+        content: '';
+        position: absolute;
+        bottom: 0; 
+        right: 0; 
+        width: 10px; 
+        height: 10px;
+        border-bottom: 2px solid #ff0000; 
+        border-right: 2px solid #ff0000;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+        }
+
+        .btn:hover:after
+        {
+        width: 100%; height: 100%;
+        transition-delay: 0s;
+        }
+
+            
+    </style>
+</head>
+<body>
+    <h1>Comic Showcase</h1>
+    <div class="gallery">
+        
+        <div class="card">
+            <div class="image-box">
+                <img src="https://posterwa.com/cdn/shop/products/BLACKC6.jpg?v=1681922408&width=416" alt="Black Clover">
+            </div>
+            <div class="content">
+                <h2>Black Clover</h2>
+                <p>Unleash your inner magic as Asta defies all odds in a quest to become the ultimate Wizard King!!</p>
+                <a href="https://www.viz.com/shonenjump/chapters/black-clover" class="btn" target="_blank" >Read Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="https://i.pinimg.com/736x/f8/f8/72/f8f872ac35dd2a9dccd4c811b556dfb4.jpg" alt="Bleach">
+            </div>
+            <div class="content">
+                <h2>Bleach</h2>
+                <p>Dive into a high-stakes battle of souls as Ichigo Kurosaki fights to protect the living and the dead!</p>
+                <a href="https://www.viz.com/shonenjump/chapters/bleach" class="btn" target="_blank">Read Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="https://static-01.daraz.lk/p/82591e396c9fa2b8079379a3665edf75.jpg" alt="Jujutsu Kaisen">
+            </div>
+            <div class="content">
+                <h2>Jujutsu Kaisen</h2>
+                <p>Brace yourself for cursed chaos as Yuji Itadori risks everything to battle the shadows of evil!</p>
+                <a href="https://www.viz.com/shonenjump/chapters/jujutsu-kaisen" class="btn" target="_blank">Read Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="https://shopfuturistic.com/cdn/shop/files/pf_22574.jpg?v=1714747522&width=1445" alt="Berserk">
+            </div>
+            <div class="content">
+                <h2>Berserk</h2>
+                <p>Witness Guts' relentless fight against destiny in a world where survival means embracing the darkness!</p>
+                <a href="https://www.mangareader.net/berserkB" class="btn" target="_blank">Read Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="https://i.pinimg.com/originals/00/bf/a5/00bfa50817ba4107538d2f79da3e20c4.jpg" alt="Solo Leveling">
+            </div>
+            <div class="content">
+                <h2>Solo Leveling</h2>
+                <p>Step into a world of monsters and power as Jin-Woo rises from zero to hero in the ultimate hunt!</p>
+                <a href="https://www.tappytoon.com/en/comics/solo-leveling" class="btn" target="_blank">Read Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="https://m.media-amazon.com/images/I/81IXTtFKL4L._AC_UF894,1000_QL80_.jpg" alt="Attack On Titan">
+            </div>
+            <div class="content">
+                <h2>Attack On Titan</h2>
+                <p>Join humanity's epic stand against towering Titans in this heart-pounding saga of courage and sacrifice!</p>
+                <a href=" https://kodansha.us/series/attack-on-titan/" class="btn" target="_blank">Read Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzdmODI2YzQtNGFjOS00MmUxLTg4ODYtYzQ0MTM5ZGVkMzJjXkEyXkFqcGc@._V1_.jpg" alt="Dragon Ball">
+            </div>
+            <div class="content">
+                <h2>Dragon Ball</h2>
+                <p>Power up with Goku and friends as they embark on explosive adventures to protect the universe!</p>
+                <a href="https://www.viz.com/shonenjump/chapters/dragon-ball" class="btn" target="_blank">Read Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9161972_b_v8_aa.jpg" alt="Naruto">
+            </div>
+            <div class="content">
+                <h2>Naruto</h2>
+                <p>Believe in the journey of a lifetime as Naruto Uzumaki inspires with dreams, bonds, and ninja action!</p>
+                <a href="https://www.viz.com/shonenjump/chapters/naruto" class="btn" target="_blank">Read Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="https://wallpaperaccess.com/full/5627712.jpg" alt="Demon Slayer">
+            </div>
+            <div class="content">
+                <h2>Demon Slayer</h2>
+                <p>Feel the fire of Tanjiro's resolve as he battles relentless demons to save his sister and humanity!</p>
+                <a href="https://www.viz.com/shonenjump/chapters/demon-slayer-kimetsu-no-yaiba" class="btn" target="_blank">Read Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
