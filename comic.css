@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=VT323&display=swap');
-/* @font-face {
-    font-family: Myfont;
-    src: url(./Arcanum_Order.ttf); */
+@font-face {
+    font-family: Myfont3;
+    src: url(fonts/SUPRRG__.TTF);
+}
 
 
 @font-face {
     font-family: Myfont2;
-    src: url(./StoneWalls.ttf);
+    src: url(fonts/StoneWalls.ttf);
 }
-body {
-    margin: 0;
-    background-image: url(./hellow.mp4);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+
+
+/* .maze{
+    animation-name: maze;
+    animation-duration: infinite;
 
 }
+
+    @keyframes maze {
+        50% {transform: rotate(180deg);}
+      }
+    
+ */
 
 .video-container {
     position: relative;
@@ -175,7 +181,7 @@ body {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jaro:opsz@6..72&family=VT323&display=swap');
-.wrapper{
+.wrapper1{
     background-color: black;
     font-family: VT323;
     font-size: 3rem;
@@ -421,7 +427,7 @@ header {
     padding: 10px;
   }
 
-  .karan{
+  .rylan{
     color: white;
     font-weight: 900;
     font-size: 55px;
@@ -430,7 +436,7 @@ header {
     margin-left: 10rem;
   }
 
-  #karan {
+  #rylan {
     color: white;
     font-size: 13px;
     font-family:"IBM Plex Mono", monospace;
@@ -440,7 +446,7 @@ header {
 
   
   
-#karanmain{
+#rylanmain{
     display: flex;
     flex-direction: row;
     margin:auto;
@@ -449,26 +455,60 @@ header {
     margin-bottom: 3rem;
 
 }
-  .kael{
+  .drakos{
     color: white;
     font-weight: 900;
     font-size: 55px;
      font-family:Myfont2;
     margin-bottom: 3rem;
     margin-left: 10rem;
+    margin-top: 6rem;
   }
 
-  #kael {
+  #drakos {
     font-size: 13px;
     font-family:"IBM Plex Mono", monospace;
     color: #b5bdb4;
     line-height: 1.5;
-    margin-left: 45px;
+    margin-left: 40px;
+    margin-top: 3rem;
   }
 
   
   
-#kaelmain{
+#drakosmain{
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    justify-content: space-around;
+    margin-left: 10rem;
+
+
+}
+
+  .mira{
+    color: white;
+    font-weight: 900;
+    font-size: 55px;
+     font-family:Myfont2;
+    margin-bottom: 3rem;
+    margin-left: 10rem;
+    margin-top: 6rem;
+  }
+
+  #mira {
+    font-size: 13px;
+    font-family:"IBM Plex Mono", monospace;
+    color: #b5bdb4;
+    line-height: 1.5;
+    margin-left: 40px;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+  }
+
+  
+  
+#miramain{
     display: flex;
     flex-direction: row;
     margin:auto;
@@ -491,3 +531,228 @@ header {
     font-family: 'MusicSound';
     src: url('Keran Space Demo.ttf') format('truetype');
 }
+
+/* .autoshow,#autoshow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+} */
+
+.quote{
+    margin-top: 10rem;
+    font-size: 6rem;
+    line-height: 1.5;
+    font-family: Myfont2;
+    color: #dedede;
+}
+
+.btn {
+    position: relative; padding: 10px 30px;
+    margin: 0 15px; color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    Letter-spacing: 2px; 
+    font-size: 3rem; 
+    Overflow:hidden;
+    transition: 0.5s;
+
+
+    }
+
+    .btn:hover{
+    background: #ff4a4a;;
+    color: #111;
+    box-shadow: 0 0 50px #ff4a4a;;
+    transition-delay: 0.5s;
+    }
+
+    .btn:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    Left: 0; width: 10px; height: 10px;
+    border-top: 2px solid #ff0000; border-left: 2px solid #ff0000;
+    transition:0.5s;
+    transition-delay: 0.5s;
+    }
+
+
+    .btn:hover:before
+    {
+    width: 100%; height: 100%;
+    transition-delay: 0s;
+    }
+
+    .btn:after{
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    right: 0; 
+    width: 10px; 
+    height: 10px;
+    border-bottom: 2px solid #ff0000; 
+    border-right: 2px solid #ff0000;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    }
+
+    .btn:hover:after
+    {
+    width: 100%; height: 100%;
+    transition-delay: 0s;
+    }
+
+
+
+
+    :root {
+        --card-height: 450px;
+        --card-width: calc(var(--card-height) / 1);
+      }
+    *{
+        box-sizing: border-box;
+    }
+    /* body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+      } */
+      .card {
+        width: var(--card-width);
+        height: var(--card-height);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 36px;
+        perspective: 2500px;
+        margin: 0 50px;
+        border-radius: 5px;
+      }
+    .cover-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .wrapper{
+        transition: all 0.5s;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        border-radius: 5px;
+    }
+    .card:hover .wrapper{
+        transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+        box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow:2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow:2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+    }
+    .wrapper::before,
+    .wrapper::after{
+        content: "";
+        opacity: 0;
+        width: 100%;
+        height: 80px;
+        transition: all 0.5s;
+        position: absolute;
+        left: 0;
+        border-radius: 5px;
+    }
+    .wrapper::before{
+        top: 0;
+        height: 100%;
+        background-image: linear-gradient(
+            to top,
+            transparent 46%,
+            rgba(12, 13, 19, 0.5)68%,
+            rgba(12, 13, 19) 97%
+        );
+        border-radius: 5px;
+    }
+    .wrapper::after{
+        bottom: 0;
+        opacity: 1;
+        background-image: linear-gradient(
+            to bottom,
+            transparent 46%,
+            rgba(12, 13, 19, 0.5) 68%,
+            rgba(12, 13, 19)97%
+        );
+        border-radius: 5px;
+    }
+    .card:hover .wrapper::before,
+    .wrapper::after{
+        opacity: 1;
+    }
+    .card:hover .wrapper::after{
+        height: 120px;
+    }
+    .title {
+        width: 100%;
+        transition: transform 0.5s;
+    }
+    .card:hover .title {
+        transform: translate3d(0%, -50px, 100px);
+    }
+      .character {
+        width: 100%;
+        opacity: 0;
+        transition: all 0.5s;
+        position: absolute;
+        z-index: -1;
+      }
+      .card:hover .character {
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+      }
+
+
+      @media screen and (max-width: 600px) {
+        .video-container {
+            height: 60vh;
+        }
+        .button {
+            font-size: 1.2rem;
+            padding: 8px 12px;
+        }
+        .text {
+            font-size: 1.2rem;
+            animation-duration: 25s;
+        }
+        .top-right-buttons {
+            top: 10px;
+            right: 10px;
+        }
+        #page-2 {
+            flex-direction: column;
+        }
+        .container {
+            width: 100%;
+            height: 100px;
+        }
+        .gallery {
+            grid-template-columns: 1fr;
+        }
+        .card {
+            width: 90vw;
+            height: 350px;
+        }
+        .cover-image {
+            object-fit: contain;
+        }
+    }
