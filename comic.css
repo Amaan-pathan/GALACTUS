@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=VT323&display=swap');
-@font-face {
+/* @font-face {
     font-family: Myfont;
-    src: url(./Arcanum_Order.ttf);
+    src: url(./Arcanum_Order.ttf); */
 
-}
+
 @font-face {
     font-family: Myfont2;
     src: url(./StoneWalls.ttf);
 }
 body {
     margin: 0;
+    background-image: url(./hellow.mp4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
 }
 
 .video-container {
@@ -255,11 +260,12 @@ body {
      font-family:Myfont2;
     margin-bottom: 3rem;
 }
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 #jist{
     line-height: 1.5;
-    font-size: 20px;
-    font-weight: 00;
-    font-family: Myfont;
+    font-size: 13px;
+    font-family:"IBM Plex Mono", monospace;
+    color: #b5bdb4;
 }
 
 .jist-img{
@@ -305,9 +311,9 @@ body {
     margin-left: 10rem;
     margin-top: 3rem;
     line-height: 1.5;
-    font-size: 20px;
-    font-weight: 00;
-    font-family: Myfont;
+    font-size: 13px;
+    font-family:"IBM Plex Mono", monospace;
+    color: #b5bdb4;
 
     /* margin-bottom: 10px; */
 }
@@ -426,10 +432,10 @@ header {
 
   #karan {
     color: white;
-    font-family: Myfont;
+    font-size: 13px;
+    font-family:"IBM Plex Mono", monospace;
+    color: #b5bdb4;
     line-height: 1.5;
-    font-size: 20px;
-    font-weight: 00;
   }
 
   
@@ -453,11 +459,10 @@ header {
   }
 
   #kael {
-    color: white;
-    font-family: Myfont;
+    font-size: 13px;
+    font-family:"IBM Plex Mono", monospace;
+    color: #b5bdb4;
     line-height: 1.5;
-    font-size: 20px;
-    font-weight: 00;
     margin-left: 45px;
   }
 
@@ -471,4 +476,18 @@ header {
     margin-left: 10rem;
 
 
+}
+#h1{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:MusicSound ;
+    color: whitesmoke;
+    font-size: 110px;
+    margin-top: -30px;
+}
+@font-face {
+    font-family: 'MusicSound';
+    src: url('Keran Space Demo.ttf') format('truetype');
 }
