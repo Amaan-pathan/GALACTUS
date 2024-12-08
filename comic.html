@@ -5,8 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comic</title>
     <link rel="stylesheet" href="comic.css">
-    <!-- <link href="./Arcanum_Order.ttf" rel="te" -->
-     
+    <style>
+        
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      #body{
+          background-color: #D2D2D2;
+          background-image:
+          repeating-linear-gradient(
+              to right, transparent 0 100px,
+              #25283b22 100px 101px
+          ),
+          repeating-linear-gradient(
+              to bottom, transparent 0 100px,
+              #25283b22 100px 101px
+          );
+      }
+      
+      #body::before{
+          position: absolute;
+          width: min(1400px, 90vw);
+          top: 10%;
+          left: 50%;
+          height: 90%;
+          transform: translateX(-50%);
+          content: '';
+          background-image: url(./YouTube\ V2\ Background\ \(2\).png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: top center;
+          pointer-events: none;
+      }
+
+  </style>
 </head>
 <body style="background-color: black;">
 
@@ -17,7 +51,11 @@
         <source src="./Video Playback (2).mp4" type="video/mp4">
       </video>
       <img src="https://i.imghippo.com/files/Sys9409CIE.png" alt="Overlay Image" class="overlay-image">
-      <div class="content"></div>
+      <div class="top-right-buttons">
+        <a href="./comic_gallery.html" class="button">GALLERY</a>
+        <a href="./comic.css" class="button">Work</a>
+        <a href="#contact" class="button">Contact</a>
+    </div>
     </div>
 
     <div class="wrapper">
@@ -30,29 +68,32 @@
       <!-- <div class="item" id="item7"><span style="color: white;">ebtbet</span></div>
       <div class="item" id="item8"><span style="color: white;">wetb</span></div> -->
     </div>
+    <!-- <section id="body" style="margin-top:  -35px;"> -->
+
+   
 
 
   
 
 <section class="galactus">
-  <h1 id="tag">Eclipse Shard: Brotherhood's Wrath</h1>
-  <div class="jist-img"></div>
-  <span id="jist">
-    In a galaxy scarred by war and ruled by the oppressive Dominion Empire, two brothers stand on opposing sides of destiny.<br>
-    Kael, a resilient warrior haunted by the destruction of his homeworld, leads a ragtag crew of misfits on a quest to overthrow the empire.<br>
-    Opposing him is his estranged brother, Karan, now a high-ranking enforcer of the Dominion who believes strength and order are the only path to survival.<br>
-    The story begins with Kael uncovering the empire’s plans to harness the energy of the *Eclipse Shard, an ancient artifact capable of reshaping the universe.<br>
-    Kael assembles a diverse crew: the loyal powerhouse **Ragnar, the brilliant tactician **Selene, and the enigmatic shard-bearer **Ishaya*, whose power is both a blessing and a curse.<br>
-    Together, they battle across treacherous worlds, face elite empire soldiers, and uncover the shard’s history while navigating themes of trust, sacrifice, and redemption.<br>
-
-    As Kael and Karan’s paths converge, their ideological rift deepens into a battle of wills. The climactic showdown on a dying starship tests Kael’s resolve to fight for unity and freedom against Karan’s belief in control and dominance. The story culminates in an epic battle where Kael must decide whether to destroy the shard and his brother or risk the galaxy’s fate.
-
-    *"Eclipse Shard: Brotherhood's Wrath"* is a sci-fi epic that blends themes of family, power, and redemption with thrilling battles, intricate character arcs, and a richly imagined universe.
-
-    <br><br><br><br><br><br>
-  </span>
+  <h1 id="tag">Eclipse Shard:<span style="color:rgb(202, 15, 15)"> Brotherhood's Wrath</span></h1>
+  <div class="jist-image">
+    <p id="jist">
+      "Eclipse Shard: Brotherhood's Wrath"* is a sci-fi epic that blends themes of family, power, and redemption with thrilling batt<br>les, intricate character arcs, and a richly imagined universe.<br>
+      In a galaxy scarred by war and ruled by the oppressive Dominion Empire, two brothers stand on opposing sides of destiny.<br>
+      Kael, a resilient warrior haunted by the destruction of his homeworld, leads a ragtag crew of misfits on a quest to overthrow the empire.<br>
+      Opposing him is his estranged brother, Karan, now a high-ranking enforcer of the Dominion who believes strength and order are the only path to survival.<br>
+      The story begins with Kael uncovering the empire’s plans to harness the energy of the *Eclipse Shard, an ancient artifact capable of reshaping the universe.<br>
+      Kael assembles a diverse crew: the loyal powerhouse **Ragnar, the brilliant tactician **Selene, and the enigmatic shard-bearer **Ishaya*, whose power is both a blessing and a curse.<br>
+      Together, they battle across treacherous worlds, face elite empire soldiers, and uncover the shard’s history while navigating themes of trust, sacrifice, and redemption.<br>
+      As Kael and Karan’s paths converge, their ideological rift deepens into a battle of wills.<br>
+      The climactic showdown on a dying starship tests Kael’s resolve to fight for unity and freedom against Karan’s belief in control and dominance.<br>
+      The story culminates in an epic battle where Kael must decide whether to destroy the shard and his brother or risk the galaxy’s fate.<br>
+    </p>
+    <img src="./comedy_chaos.jpg" style="height: 300px;width: 250px;">
+  </div>
+  
 </section>
-
 <h1 class="karan">KARAN:<span style="color:rgb(202, 15, 15)"> Relentless-Enigmatic-Unforgiving</span></h1>
 <section id="character1">
   <div id="karanmain">
@@ -76,7 +117,30 @@
 </div>
 </section>
 
-<section style="margin-top: 30px;">
+<h1 class="kael">KAEL:<span style="color:rgb(202, 15, 15)"> Determined-Compassionate-Heroic</span></h1>
+<section id="character2">
+  <div id="kaelmain">
+    <img src="fantasy.jpg" style="height: 300px;width: 250px;">
+  <p id="kael">
+    Kael stands as a symbol of resilience and determination, a tall, lean warrior in his early 30s.<br>
+    His dark, perpetually disheveled hair reflects a life spent on the battlefield, while his piercing green eyes burn with an unshakable sense of purpose.<br>
+    His face and arms bear the scars of countless conflicts, each one a testament to his sacrifices and unwavering commitment to his cause.<br>
+    He dons advanced armor that is both functional and sleek, its metallic accents enhancing his agility and amplifying his combat abilities.<br>
+    At his side rests a glowing energy sword, a weapon that embodies his resolve and serves as a constant reminder of the battles he has fought and those yet to come.<br>
+    Kael’s personality is a compelling mix of strength and compassion.<br>
+    He is brave, fiercely loyal to his crew, and relentless in his pursuit of justice, making him an inspiring leader who others willingly follow.<br>
+    Despite the pain and losses he has endured, Kael remains steadfast in his belief that the galaxy can be a better place.<br>
+    His compassionate nature sets him apart, as he balances the harsh realities of conflict with a deep empathy for those he seeks to protect.<br>
+    Kael's journey is one of struggle and redemption.<br>
+    As the central figure in the story, he leads his crew with unwavering resolve, pushing forward even when the odds seem insurmountable.<br>
+    His mission to overthrow the empire is not just a fight for freedom but also a deeply personal quest, as it ultimately leads him to confront his estranged brother, Karan.
+    The clash between the two brothers, fueled by opposing ideologies and a shared history, becomes the emotional and dramatic core of the story, with Kael embodying hope and resilience in the face of darkness.
+  </p>
+</div>
+</section>
+
+
+<!-- <section style="margin-top: 30px;">
   <header>
     <h1>Comic Book Gallery</h1>
     <p>Explore the creativity of our community!</p>
@@ -104,26 +168,33 @@
       <p>By: Sarah Collins</p>
     </div>
   </section>
-  </section>
+  </section> -->
 
 
   
   <section id="team">
     <h1 class="members">TEAM</h1>
     <span class="about">
-      GALACTUS was concepted and developed by Pathan Amaan, Priyabrata Singh and Saad Arqam<br>
-      <span style="margin-left: 10rem;">Who are students at Newton School Of Technology.</span>
+      GALACTUS was concepted and developed by <span style="color:red">Pathan Amaan </span>,<span style="color:red"> Priyabrata Singh</span> and<span style="color:red"> Saad Arqam</span>.<br>
+      <p style="margin-left: 10rem;">All three of them are students at Newton School Of Technology. It showcases GALACTUS, an original comic book crafted by the team.<br>
+        The website offers an immersive platform to explore their creative universe, blending storytelling with captivating visuals.<br>
+        Through GALACTUS, the creators bring their unique narrative to life, making it an engaging experience for comic enthusiasts and storytellers alike.</p>
     </span>
     <div class="pics">
     <div class="image-container"><img id="priyo" src="./WhatsApp Image 2024-12-05 at 18.06.58.jpeg"></div>
     <div class="image-container"><img id="saad" src="./WhatsApp Image 2024-12-05 at 18.07.55.jpeg"></div>
     <div class="image-container"><img id="amaan" src="./WhatsApp Image 2024-12-05 at 18.07.34.jpeg"></div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     
   </section>
-  <footer>
+  <!-- <footer>
     <p>© 2024 Comic Creator | All rights reserved.</p>
-  </footer> 
-
+  </footer>  -->
+</section>
 </body>
 </html>

@@ -4,11 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comic Showcase</title>
+    <link rel="stylesheet" href="./rotate.css">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(https://i.imghippo.com/files/xxoO9198osY.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+
         body {
             margin: 0;
             padding: 0;
-            background-color: #121212;
+            /* background-color: #121212; */
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -26,6 +60,7 @@
             width: 90%;
             max-width: 1200px;
         }
+
 
         .card {
             width: 100%;
@@ -156,7 +191,36 @@
     </style>
 </head>
 <body>
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="https://posterwa.com/cdn/shop/products/BLACKC6.jpg?v=1681922408&width=416" alt=""></div>
+            <div class="item" style="--position: 2"><img src="https://i.pinimg.com/736x/f8/f8/72/f8f872ac35dd2a9dccd4c811b556dfb4.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="https://static-01.daraz.lk/p/82591e396c9fa2b8079379a3665edf75.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="https://shopfuturistic.com/cdn/shop/files/pf_22574.jpg?v=1714747522&width=1445" alt=""></div>
+            <div class="item" style="--position: 5"><img src="https://i.pinimg.com/originals/00/bf/a5/00bfa50817ba4107538d2f79da3e20c4.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="https://m.media-amazon.com/images/I/81IXTtFKL4L._AC_UF894,1000_QL80_.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="https://m.media-amazon.com/images/M/MV5BNzdmODI2YzQtNGFjOS00MmUxLTg4ODYtYzQ0MTM5ZGVkMzJjXkEyXkFqcGc@._V1_.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9161972_b_v8_aa.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="https://wallpaperaccess.com/full/5627712.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="https://i.imghippo.com/files/Djp9313HCA.jpg" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="GALACTUS">
+                GALACTUS
+            </h1>
+            <div class="author">
+                <h2>Team Galactus</h2>
+                <p><b>Web Design</b></p>
+                <p>
+                    Comic book Creation
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>    
+
     <h1>Comic Showcase</h1>
+
     <div class="gallery">
         
         <div class="card">
