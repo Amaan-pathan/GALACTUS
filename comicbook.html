@@ -6,52 +6,61 @@
     <title>GALACTUS Comic</title>
     <link rel="stylesheet" href="comicbook.css">
     <style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jaro:opsz@6..72&family=VT323&display=swap');
         audio {
             display: none;
         }
         .audio-controls {
             display: flex;
             gap: 10px;
+            float: right;
+            margin-left: 82rem;
+            margin-top: -95rem;
             align-items: center;
-            margin-top: 10px;
-            margin-left: 65rem;
-            margin-top: -53rem;
-
         }
         .audio-controls button {
             padding: 10px;
             font-size: 16px;
             cursor: pointer;
         }
+        h2,h1{
+            font-family:VT323;
+        }
     </style>
 </head>
-<body style="background-color: black;">
-   
-    <div class="conteudo">
-        <div class="carrousel">
-            <img src="pages/cover page.jpg" alt="Cover">
-            <img src="pages/1.jpg" alt="Page 1">
-            <img src="pages/2.jpg" alt="Page 2">
-            <img src="pages/3.jpg" alt="Page 3">
-            <img src="pages/4.jpg" alt="Page 4">
-            <img src="pages/5.jpg" alt="Page 5">
-            <img src="pages/6.jpg" alt="Page 6">
-            <img src="pages/7.jpg" alt="Page 7">
-            <img src="pages/8.jpg" alt="Page 8">
-            <img src="pages/9.jpg" alt="Page 9">
-            <img src="pages/10.jpg" alt="Page 10">
+<body style="background-image: url(./Brujita\ Official\ Video\ \(1\).gif);background-repeat: no-repeat; background-attachment: fixed;background-size: 100% 100%;">
+    <a href="./comic.html"><img src="images/Image Upload Cutout Pro.png" style=" position:absolute; width:120px; height: 120px;margin-top: -25rem;" ></a>
+   <div style="display: grid;grid-template-columns: 2;">
+        <div class="conteudo">
+            <div class="carrousel">
+                <img src="pages/cover page.jpg" alt="Cover">
+                <img src="pages/1.jpg" alt="Page 1">
+                <img src="pages/2.jpg" alt="Page 2">
+                <img src="pages/3.jpg" alt="Page 3">
+                <img src="pages/4.jpg" alt="Page 4">
+                <img src="pages/5.jpg" alt="Page 5">
+                <img src="pages/6.jpg" alt="Page 6">
+                <img src="pages/7.jpg" alt="Page 7">
+                <img src="pages/8.jpg" alt="Page 8">
+                <img src="pages/9.jpg" alt="Page 9">
+                <img src="pages/10.jpg" alt="Page 10">
+            </div>
+            <h1 style="color: aliceblue;">swipe left to read next page!</h1>
         </div>
-        <div class="audio-player"></div>
-    <audio id="myAudio" src="./Rick Roll Sound Effect.mp3" controls></audio>
-    <div class="audio-controls">
-        <button onclick="document.getElementById('myAudio').play()">▶️</button>
-        <button onclick="document.getElementById('myAudio').pause()">⏸</button>
-        <button onclick="document.getElementById('myAudio').muted = !document.getElementById('myAudio').muted">
-            🔊
-        </button>
-    </div>
-    </div>
+    <div class="audio-player"></div>
+    <h2 style="color: rgb(221, 148, 83);margin-left: 2rem;position: absolute;margin-left: 70rem;margin-top: 1.5rem;font-size: 2.2rem;">Set the Mood:</h2>
+<audio id="myAudio" src="./Brujita Official Video.mp3" controls></audio>
+<div class="audio-controls">
+    <button onclick="document.getElementById('myAudio').play()">▶️</button>
+    <button onclick="document.getElementById('myAudio').pause()">⏸</button>
+    <button onclick="document.getElementById('myAudio').muted = !document.getElementById('myAudio').muted">
+        🔊
+    </button>
+</div>
+    
     
 </div>
+   </div>
+   
 </body>
 </html>

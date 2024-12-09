@@ -330,15 +330,15 @@
 
 #saad{
     width:300px;
-    height: 250px;
+    height: 400px;
 }
 #priyo{
     width:300px;
-    height: 250px;
+    height: 400px;
 }
 #amaan{
     width:300px;
-    height: 250px;
+    height: 400px;
 }
 
 .image-container {
@@ -790,7 +790,7 @@ header {
 
 
     .card1 {
-        width: 600px;
+        width: 550px;
         height: 800px;
         aspect-ratio: 4 / 3;
         /* border-radius: 10px; */
@@ -808,7 +808,7 @@ header {
     }
 
     .card1 .image-box img {
-        width: 600px;
+        width: 550px;
         height: 100%;
         object-fit: cover; 
         transition: transform 0.5s ease-in-out;
@@ -864,7 +864,7 @@ header {
 
     
     .card2 {
-        width: 1000px;
+        width: 800px;
         height: 380px;
         aspect-ratio: 4 / 3;
         /* border-radius: 10px; */
@@ -872,7 +872,7 @@ header {
         overflow: hidden;
         cursor: pointer;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        margin-left: 750px;
+        margin-left: 700px;
         margin-top: -800px;
         /* background-color: #1c1c1c; */
     }
@@ -884,7 +884,7 @@ header {
     }
 
     .card2 .image-box img {
-        width: 1000px;
+        width: 800px;
         height: 100%;
         object-fit: cover; 
         transition: transform 0.5s ease-in-out;
@@ -940,7 +940,7 @@ header {
 
 
     .card3 {
-        width: 1000px;
+        width: 800px;
         height: 370px;
         aspect-ratio: 4 / 3;
         /* border-radius: 10px; */
@@ -948,7 +948,7 @@ header {
         overflow: hidden;
         cursor: pointer;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        margin-left: 750px;
+        margin-left: 700px;
         margin-top: 50px;
         /* background-color: #1c1c1c; */
     }
@@ -960,7 +960,7 @@ header {
     }
 
     .card3 .image-box img {
-        width: 1000px;
+        width: 800px;
         height: 100%;
         object-fit: cover; 
         transition: transform 0.5s ease-in-out;

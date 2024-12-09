@@ -7,13 +7,16 @@ body {
 }
 
 .conteudo {
-    width: 850px;
-    height: 800px;
+    width: 800px;
+    height: 750px;
     margin-top: 20px;
     border: 15px solid rgb(255, 255, 255);
+    margin-left: 17.5rem;
+    
 }
 
 .carrousel {
+    /* margin-top: 100px; */
     display: grid;
     grid-auto-flow: column;
     scroll-behavior: smooth;
@@ -25,15 +28,14 @@ body {
 }
 
 .carrousel::-webkit-scrollbar {
-    display: none; /* Hides the scrollbar */
+    display: none;
 }
 
 img {
-    width: 850px;
-    height: 800px;
+    width: 800px;
+    height: 750px;
 
     margin-top: -16px;
-    /* border-radius: 30px; */
-    /* object-fit: cover; */
+
     scroll-snap-align: start;
 }
