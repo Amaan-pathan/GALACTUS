@@ -10,6 +10,7 @@ body {
     width: 850px;
     height: 800px;
     margin-top: 20px;
+    border: 15px solid rgb(255, 255, 255);
 }
 
 .carrousel {
@@ -30,6 +31,8 @@ body {
 img {
     width: 850px;
     height: 800px;
+
+    margin-top: -16px;
     /* border-radius: 30px; */
     /* object-fit: cover; */
     scroll-snap-align: start;
