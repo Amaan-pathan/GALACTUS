@@ -1,12 +1,36 @@
-.buttons{
-    display:inline;
-    
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    /* height: 100vh; */
 }
 
-.back{
-    background-color: antiquewhite;
+.conteudo {
+    width: 850px;
+    height: 800px;
+    margin-top: 20px;
 }
 
-.next{
-    background-color: antiquewhite;
+.carrousel {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: smooth;
+    gap: 1.2rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    padding: 1rem;
+}
+
+.carrousel::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+img {
+    width: 850px;
+    height: 800px;
+    /* border-radius: 30px; */
+    /* object-fit: cover; */
+    scroll-snap-align: start;
 }
