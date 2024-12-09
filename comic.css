@@ -470,7 +470,7 @@ header {
     font-family:"IBM Plex Mono", monospace;
     color: #b5bdb4;
     line-height: 1.5;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     margin-top: 3rem;
   }
 
@@ -509,6 +509,37 @@ header {
   
   
 #miramain{
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    justify-content: space-around;
+    margin-left: 10rem;
+
+
+}
+  .kael{
+    color: white;
+    font-weight: 900;
+    font-size: 55px;
+     font-family:Myfont2;
+    margin-bottom: 3rem;
+    margin-left: 10rem;
+    margin-top: 6rem;
+  }
+
+  #kael {
+    font-size: 13px;
+    font-family:"IBM Plex Mono", monospace;
+    color: #b5bdb4;
+    line-height: 1.5;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+  }
+
+  
+  
+#main{
     display: flex;
     flex-direction: row;
     margin:auto;
@@ -755,4 +786,227 @@ header {
         .cover-image {
             object-fit: contain;
         }
+    }
+
+
+    .card1 {
+        width: 600px;
+        height: 800px;
+        aspect-ratio: 4 / 3;
+        /* border-radius: 10px; */
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        /* background-color: #1c1c1c; */
+    }
+
+    .card1 .image-box {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .card1 .image-box img {
+        width: 600px;
+        height: 100%;
+        object-fit: cover; 
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .card1 .content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        transform: translateY(100%);
+        transition: transform 0.4s ease;
+        overflow-wrap: break-word; 
+    }
+
+    .content h2 {
+        font-size: 1.8em;
+        margin: 0;
+        color: #ff4a4a;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .content p {
+        font-size: 0.9em;
+        color: #d1d1d1;
+        margin-top: 10px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        margin-right:15px ;
+    }
+
+    .card1:hover .image-box img {
+        transform: scale(1.05); 
+    }
+
+    .card1:hover .content {
+        transform: translateY(0);
+    }
+
+    .card1:hover .content h2,
+    .card1:hover .content p {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    
+    
+
+    
+    .card2 {
+        width: 1000px;
+        height: 380px;
+        aspect-ratio: 4 / 3;
+        /* border-radius: 10px; */
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        margin-left: 750px;
+        margin-top: -800px;
+        /* background-color: #1c1c1c; */
+    }
+
+    .card2 .image-box {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .card2 .image-box img {
+        width: 1000px;
+        height: 100%;
+        object-fit: cover; 
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .card2 .content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        transform: translateY(100%);
+        transition: transform 0.4s ease;
+        overflow-wrap: break-word; 
+    }
+
+    .content h2 {
+        font-size: 1.8em;
+        margin: 0;
+        color: #ff4a4a;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .content p {
+        font-size: 0.9em;
+        color: #d1d1d1;
+        margin-top: 10px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        margin-right:15px ;
+    }
+
+    .card2:hover .image-box img {
+        transform: scale(1.05); 
+    }
+
+    .card2:hover .content {
+        transform: translateY(0);
+    }
+
+    .card2:hover .content h2,
+    .card2:hover .content p {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    
+    
+
+
+    .card3 {
+        width: 1000px;
+        height: 370px;
+        aspect-ratio: 4 / 3;
+        /* border-radius: 10px; */
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        margin-left: 750px;
+        margin-top: 50px;
+        /* background-color: #1c1c1c; */
+    }
+
+    .card3 .image-box {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .card3 .image-box img {
+        width: 1000px;
+        height: 100%;
+        object-fit: cover; 
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .card3 .content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        transform: translateY(100%);
+        transition: transform 0.4s ease;
+        overflow-wrap: break-word; 
+    }
+
+    .content h2 {
+        font-size: 1.8em;
+        margin: 0;
+        color: #ff4a4a;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .content p {
+        font-size: 0.9em;
+        color: #d1d1d1;
+        margin-top: 10px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        margin-right:15px ;
+    }
+
+    .card3:hover .image-box img {
+        transform: scale(1.05); 
+    }
+
+    .card3:hover .content {
+        transform: translateY(0);
+    }
+
+    .card2:hover .content h2,
+    .card3:hover .content p {
+        opacity: 1;
+        transform: translateY(0);
     }
