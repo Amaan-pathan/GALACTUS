@@ -3,7 +3,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    /* height: 100vh; */
 }
 
 .conteudo {
@@ -16,7 +15,6 @@ body {
 }
 
 .carrousel {
-    /* margin-top: 100px; */
     display: grid;
     grid-auto-flow: column;
     scroll-behavior: smooth;

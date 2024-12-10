@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Comic Creators</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="images/galactus_favicon.png" rel="icon" type="image/png">
+    <style>
+        @font-face {
+            font-family: font;
+            src: url(./SPACE\ ARMOR.otf);
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        * {
+            font-family: 'Poppins', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #151F28;
+        }
+        h1 {
+            margin-bottom: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+            font-size: 65px;
+            font-family: font;
+            color: white;
+            
+        }
+        .team-container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .card {
+            position: relative;
+            width: 350px;
+            height: 400px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            margin: 10px;
+            padding: 20px;
+        }
+        .card:hover {
+            width: 600px;
+            transition-delay: 0.5s;
+        }
+        .card .circle {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card .circle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border: 8px solid var(--clr);
+            background: #191919;
+            transition: 0.5s, background 0.5s;
+            transition-delay: 0.75s, 1s;
+            filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+        }
+        .card:hover .circle::before {
+            width: 100%;
+            transition-delay: 0.5s;
+            height: 100%;
+            border-radius: 20px;
+            background: var(--clr);
+        }
+        .card .circle .logo {
+            position: relative;
+            width: 250px;
+            transition: 0.5s;
+            transition-delay: 0.5s;
+        }
+        .card:hover .circle .logo {
+            transform: scale(0);
+            transition-delay: 0s;
+        }
+        .card .product_img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            height: 300px;
+            transition: 0.5s ease-in-out;
+        }
+        .card:hover .product_img {
+            transition-delay: 0.75s;
+            transform: translate(-50%, -50%) scale(1) rotate(360deg);
+            top: 65%;
+            left: 75%;
+            height: 500px;
+        }
+        .card .content {
+            position: absolute;
+            width: 50%;
+            left: 20%;
+            padding: 20px 20px 20px 40px;
+            opacity: 0;
+            transition: 0.5s;
+            visibility: hidden;
+        }
+        .card:hover .content {
+            transition-delay: 0.75s;
+            opacity: 1;
+            visibility: visible;
+            left: 0;
+        }
+        .card .content h2 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 2.4em;
+            line-height: 1em;
+            margin-bottom: 10px;
+        }
+        .card .content p {
+            color: #fff;
+            font-size: 1em;
+        }
+        .card .content .social-icons {
+            margin-top: 25px;
+        }
+        .card .content .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        .card .content .social-icons a:hover {
+            color: #151F28;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meet the Legends</h1>
+    <div class="team-container">
+        
+        <div class="card">
+            <div class="circle" style="--clr:#f40103;">
+                <img src="images/amaanlogo.png" alt="" class="logo">
+            </div>
+            <div class="content">
+                <h2>Amaan</h2>
+                <p>Hi! I'm Amaan, a passionate coder and tech enthusiast. I love creating comics with unique storylines and vibrant illustrations.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/srk_555_/profilecard/?igsh=YjBqd2V5dWlkNGNz" target="_blank" class="fab fa-instagram"></a>
+                    <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter"></a>
+                    <a href="https://www.linkedin.com/in/pathan-amaan-b34851331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <img src="images/avatar.png" alt="" class="product_img">
+        </div>
+        
+        <div class="card">
+            <div class="circle" style="--clr:#1E90FF;">
+                <img src="images/saadlogo.png" alt="" class="logo" style="margin-left:25px;">
+            </div>
+            <div class="content">
+                <h2>Saad</h2>
+                <p>Hello! I'm Saad, an illustrator who brings characters to life with bold colors and dynamic designs. Comics are my canvas!</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/saadarq_/profilecard/?igsh=Yjhrb2Q1Nmc4bDAw" target="_blank" class="fab fa-instagram"></a>
+                    <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter"></a>
+                    <a href="https://www.linkedin.com/in/avgchillguy?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <img src="images/Saad_avatar.png" alt="" class="product_img">
+        </div>
+        
+        <div class="card">
+            <div class="circle" style="--clr:#32CD32;">
+                <img src="images/priyologo.png" alt="" class="logo" style="margin-bottom: 20px;margin-left: 10px;">
+            </div>
+            <div class="content">
+                <h2>Priyo</h2>
+                <p>Hi there! I'm Priyo, a writer and storyteller who crafts imaginative worlds and unforgettable comic adventures.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/priyxbrxtx/profilecard/?igsh=dXpjemFramk1M3ox" target="_blank" class="fab fa-instagram"></a>
+                    <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter"></a>
+                    <a href="https://www.linkedin.com/in/avgnststudent?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <img src="images/priyo_avatar.png" alt="" class="product_img">
+        </div>
+    </div>
+</body>
+</html>
+

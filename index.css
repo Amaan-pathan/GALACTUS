@@ -11,18 +11,6 @@
 }
 
 
-/* .maze{
-    animation-name: maze;
-    animation-duration: infinite;
-
-}
-
-    @keyframes maze {
-        50% {transform: rotate(180deg);}
-      }
-    
- */
-
 .video-container {
     position: relative;
     width: 100%;
@@ -48,7 +36,7 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-    /* opacity: ; */
+
 }
 
 .top-right-buttons {
@@ -79,7 +67,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-color: black; */
     color: white;
 }
 
@@ -135,12 +122,11 @@
     z-index: -1;
 }
 
-/* @import url('https://googleapis.cpm/css2?family=Roboto:wght@400;500;700;900&display=swap'); */
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* font-family: Cinzel; */
+
 }
 
 #zap{
@@ -223,8 +209,6 @@
     text-align: center;
     font-size: 28px;
     margin-top: -15px;
-    /* overflow: hidden; */
-    /* font-family: 'Courier New', Courier, monospace; */
 }
 
 #item1{
@@ -245,12 +229,7 @@
  #item6{
     animation-delay:calc(30s/6 * (6 - 6) * -1) ;
 }
-/* #item7{
-    animation-delay:calc(30s/8 * (8 - 7) * -1) ;
-}
-#item8{
-    animation-delay:calc(30s/8 * (8 - 8) * -1) ;
-}  */
+
 
 .galactus{
     font-family: "Impact", serif;
@@ -279,7 +258,6 @@
     flex-direction: row;
     margin:auto;
     justify-content: space-around;
-    /* margin-left: 10rem; */
     margin-bottom: 3rem;
 }
 
@@ -321,7 +299,6 @@
     font-family:"IBM Plex Mono", monospace;
     color: #b5bdb4;
 
-    /* margin-bottom: 10px; */
 }
 
 #team{
@@ -353,10 +330,9 @@
     transition: transform 0.3s ease, filter 0.3s ease;
   }
   
-  /* Zoom effect */
+
   .image-container:hover img {
     transform: scale(1.2);
-    /* filter: brightness(80%); */
   }
   .image-container{
     transition: 0.5s ease-in;
@@ -470,7 +446,6 @@ header {
     font-family:"IBM Plex Mono", monospace;
     color: #b5bdb4;
     line-height: 1.5;
-    /* margin-left: 40px; */
     margin-top: 3rem;
   }
 
@@ -563,20 +538,6 @@ header {
     src: url('Keran Space Demo.ttf') format('truetype');
 }
 
-/* .autoshow,#autoshow{
-    animation: autoShowAnimation both;
-    animation-timeline: view(70% 5%);
-
-}
-@keyframes autoShowAnimation{
-    from{
-        opacity: 0;
-        transform: translateY(200px) scale(0.3);
-    }to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-} */
 
 .quote{
     margin-top: 10rem;
@@ -652,15 +613,7 @@ header {
     *{
         box-sizing: border-box;
     }
-    /* body {
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: white;
-      } */
+    
       .card {
         width: var(--card-width);
         height: var(--card-height);
@@ -793,12 +746,10 @@ header {
         width: 550px;
         height: 800px;
         aspect-ratio: 4 / 3;
-        /* border-radius: 10px; */
         position: relative;
         overflow: hidden;
         cursor: pointer;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        /* background-color: #1c1c1c; */
     }
 
     .card1 .image-box {
@@ -867,14 +818,12 @@ header {
         width: 800px;
         height: 380px;
         aspect-ratio: 4 / 3;
-        /* border-radius: 10px; */
         position: relative;
         overflow: hidden;
         cursor: pointer;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         margin-left: 700px;
         margin-top: -800px;
-        /* background-color: #1c1c1c; */
     }
 
     .card2 .image-box {
@@ -943,14 +892,12 @@ header {
         width: 800px;
         height: 370px;
         aspect-ratio: 4 / 3;
-        /* border-radius: 10px; */
         position: relative;
         overflow: hidden;
         cursor: pointer;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         margin-left: 700px;
         margin-top: 50px;
-        /* background-color: #1c1c1c; */
     }
 
     .card3 .image-box {
